@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Basics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: blue;">Main Heading</h1>
+    <h2>Subheading</h2>
+
+    <div class="container">
+        <div class="card">
+            <h3>Paragraphs</h3>
+            <p>This is a paragraph - use this for blocks of text.</p>
+            <p>
+                <strong>Important text</strong>
+                <br>
+                <b>Bold text</b>
+            </p>
+            <p>
+                <em>Emphasized text</em>
+                <br>
+                <i>Italicized text</i>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3 id="ol-header">Numbered/Ordered Lists</h3>
+            <ol>
+                <li>Wake up</li>
+                <li>Brush your teeth</li>
+                <li>Quit your job</li>
+                <li>Go back to bed</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>Bulleted/Unordered Lists</h3>
+            <ul id="parent">
+                <li>Bread</li>
+                <li>Milk</li>
+                <ul>
+                    <li>Whole</li>
+                    <li>Almond</li>
+                </ul>
+                <li>Eggs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3>Links</h3>
+            <p>
+                HTML Documentation link: <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Image</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/250px-HTML5_logo_and_wordmark.svg.png"
+                alt="HTML 5 Logo" />
+        </div>
+
+        <div class="card">
+            <h3>Forms</h3>
+
+            <form onsubmit="event.preventDefault(); alert('Form submitted for ' + this.first_name.value)">
+                <label for="first_name">First Name:</label>
+                <br>
+                <input type="text" placeholder="First Name" id="first_name" name="first_name" />
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" placeholder="Email" id="email" name="email" />
+
+                <br><br>
+
+                <label for="sub">Subscribe to Tredd</label>
+                <br>
+                <input type="checkbox" id="sub" name="sub" />
+
+                <br><br>
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
